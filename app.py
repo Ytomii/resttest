@@ -15,8 +15,8 @@ def random_gen(low, high, count):
 
 @app.route('/')
 def test():
-	a = request.args.get('min', type=int)
-	b = request.args.get('max', type=int)
+	a = request.args.get('a', type=int)
+	b = request.args.get('b', type=int)
 	if a > b:
 		a, b = b, a
 	mylist = random_gen(a, b+1, 10)
