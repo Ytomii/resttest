@@ -8,7 +8,7 @@ RUN apt-get update && \
 	apt-get install -y  git \
 				python \
 				python-pip && \
-	pip install flask
+	pip install flask flask-httpauth
 
 
 
