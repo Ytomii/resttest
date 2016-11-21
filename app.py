@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from flask import Flask, make_response, render_template, request
+from flask import Flask, make_response, request
 from array import array
 import random, json
 
@@ -26,7 +26,6 @@ def test():
 	json_numbers = json.dumps(mylist)
 	json.loads(json_numbers)
 	return json_numbers
-	#return render_template('index.html', mylist=mylist, json_numbers=json_numbers)
 
 if __name__ == '__main__':
     app.run(host= '0.0.0.0', debug=True)
